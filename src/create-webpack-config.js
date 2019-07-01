@@ -76,7 +76,7 @@ const createWebpackConfig = projectDirname => {
           ],
         },
         {
-          test: /\.s(a|c)ss$/,
+          test: /\.(sa|sc|c)ss$/,
           exclude: /\.module.(s(a|c)ss)$/,
           loader: [
             isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
