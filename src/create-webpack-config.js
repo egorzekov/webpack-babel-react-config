@@ -61,9 +61,9 @@ const createWebpackConfig = projectDirname => {
             {
               loader: 'css-loader',
               options: {
-                modules: true,
-                localIdentName: '[name]__[local]___[hash:base64:5]',
-                camelCase: true,
+                modules: {
+                  localIdentName: '[name]__[local]___[hash:base64:5]',
+                },
                 sourceMap: isDevelopment,
               },
             },
